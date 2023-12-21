@@ -110,6 +110,7 @@ class CarRental {
         customers.add(customer);
     }
 
+     //available or not
     public void rentCar(Car car, Customer customer, int days) {
         if (car.isAvailable()) {
             car.rent();
@@ -120,6 +121,7 @@ class CarRental {
         }
     }
 
+    //which type of car you returned
     public void returnCar(Car car) {
         car.returnCar();
         Rental rentalToRemove = null;
